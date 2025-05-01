@@ -10,10 +10,10 @@ env:
 
 permissions:
   actions: read
+  contents: read
 
 jobs:
   terraform-apply:
-    if: ${{false}}
     runs-on: ubuntu-latest
     defaults:
       run:

@@ -1,3 +1,2 @@
-## Terraform AWS template
+## Interlinked Terraform AWS Code Registry
 
-Default template to use for quick set up. Includes github actions workflow.
