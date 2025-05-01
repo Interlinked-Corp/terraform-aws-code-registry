@@ -4,7 +4,7 @@ data "aws_ecr_lifecycle_policy_document" "il101_ecr_default_policy" {
     description = "This is the default policy. It will persist at most 5 tags."
 
     selection {
-      tag_status       = "any"
+      tag_status       = "tagged"
       tag_pattern_list = ["latest", "*"]
       count_type       = "imageCountMoreThan"
       count_number     = 5
