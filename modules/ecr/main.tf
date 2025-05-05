@@ -5,7 +5,7 @@ data "aws_ecr_lifecycle_policy_document" "il101_ecr_default_policy" {
 
     selection {
       tag_status       = "tagged"
-      tag_pattern_list = ["latest", "*"]
+      tag_pattern_list = ["*"]
       count_type       = "imageCountMoreThan"
       count_number     = 5
     }
